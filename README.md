@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 
 ## About Me
-Passionate developer with a strong desire to work with cutting-edge technologies and contribute to innovative projects that push the boundaries of technology.
+Passionate developer with a strong desire to work with cutting-edge technologies and contribute to innovative projects that push the boundaries of technology. ABC
 
 ## Skills
 - Languages: Java, Python
