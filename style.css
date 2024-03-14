@@ -1,3 +1,20 @@
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em; /* Adjust as needed */
+}
+
+.email, .linkedin, .mobile {
+    margin: 0 10px;
+}
+
+.email {
+    text-align: left;
+}
+
+.linkedin, .mobile {
+    text-align: right;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
