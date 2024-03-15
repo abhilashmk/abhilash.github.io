@@ -4,7 +4,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>About Me and Skills</title>
     <style>
-       
+        body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        }
+        
+        .about-me, .skills {
+            text-align: left;
+            width: 80%;
+            margin-left: 10%;
+        }
         .navbar {
             background-color: #3b5998;
         }
@@ -17,8 +28,11 @@
             padding: 20px;
             border-radius: 8px;
         }
-        .contact-info div {
-            margin-bottom: 10px;
+        .contact-info {
+            background-color: #f0f2f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px;
         }
        .profile-image {
             width: 200px;
