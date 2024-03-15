@@ -5,6 +5,11 @@
     <title>About Me and Skills</title>
     <style>
         body {
+            background: url('microsoft.png') no-repeat right;
+            background-size: cover;
+            filter: blur(8px);
+            height: 100vh;
+            margin: 0;
             background-color: #f0f2f5;
         }
         .navbar {
@@ -21,6 +26,14 @@
         }
         .contact-info div {
             margin-bottom: 10px;
+        }
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            right: 20px;
         }
     </style>
 </head>
@@ -41,23 +54,22 @@
             </ul>
         </div>
     </nav>
+    <img src="Profile.jpg" class="profile-image" alt="Your Image">
     <div class="container">
-        <h1 class="text-center">Abhilash Konnur</h1>
-        <div class="contact-info">
-            <div class="email">Email: abhilashkonnur1@gmail.com</div>
-            <div class="linkedin">LinkedIn: <a href="https://www.linkedin.com/in/abhilash-konnur-1b484b123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">linkedin.com/in/Abhilash</a></div>
-            <div class="mobile">Mobile: +1-234-567-8901</div>
-        </div>
-        <img src="path_to_your_photo.jpg" class="img-fluid rounded-circle mx-auto d-block" alt="Your photo">
-        <p class="text-justify">Passionate developer with a strong desire to work with cutting-edge technologies...</p>
-        <img src="path_to_logo.jpg" class="img-fluid mx-auto d-block" alt="Azure or Microsoft logo">
-        <h2 class="text-center">Skills</h2>
+        <h2>About Me</h2>
+        <p>Passionate developer with a strong desire to work with cutting-edge technologies and contribute to innovative projects that push the boundaries of technology.</p>
+        <h2>Skills</h2>
         <ul class="list-group">
             <li class="list-group-item">Languages: Java, Python</li>
             <li class="list-group-item">Web Servers: Apache, Tomcat, Nginx</li>
-            <li class="list-group-item">Networking: TCP/IP, HTTP/S</li>
             <li class="list-group-item">Platform: Linux, Docker, Kubernetes</li>
         </ul>
+        <!-- Add the rest of your content here -->
+    </div>
+        <div class="contact-info">
+        <div class="email">Email: abhilashkonnur1@gmail.com</div>
+        <div class="linkedin">LinkedIn: <a href="https://www.linkedin.com/in/abhilash-konnur-1b484b123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">linkedin.com/in/Abhilash</a></div>
+        <div class="mobile">Mobile: +1-234-567-8901</div>
     </div>
 </body>
 </html>
