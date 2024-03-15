@@ -1,80 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Abhilash Konnur</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>About Me and Skills</title>
 </head>
 <body>
-    <div class="header">
-            <h1>Abhilash Konnur</h1>
-    </div>
-    <div class="contact-info">
-        <div class="email">Email: abhilashkonnur1@gmail.com</div>
-        <div class="linkedin">LinkedIn: <a href="https://www.linkedin.com/in/abhilash-konnur-1b484b123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">linkedin.com/in/Abhilash</a></div>
-        <div class="mobile">Mobile: +1-234-567-8901</div>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Abhilash Konnur</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">About Me and Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="education_experience.html">Education and Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
-        <div class="section">
-            <h2>About Me</h2>
-            <p>Passionate developer with a strong desire to work with cutting-edge technologies and contribute to innovative projects that push the boundaries of technology.</p>
-        </div>
-        <div class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li>Languages: Java, Python</li>
-                <li>Web Servers: Apache, Tomcat, Nginx</li>
-                <li>Networking: TCP/IP, HTTP/S</li>
-                <li>Platform: Linux, Docker, Kubernetes</li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Education</h2>
-            <p>Bachelor of Information Science and Engineering, B V Bhoomaraddi College of Engineering, 2013-1027</p>
-        </div>
-        <div class="section">
-            <h2>Experience</h2>
-            <h3>Cloud Support Engineer for Open-Source Technologies on Azure. From: Aug-2017 To: Sep-2021</h3>
-            <ul>
-                <li>Provided Technical Support for developing and managing web apps, backend apps hosted on Azure App Service, Azure Container Apps, Azure Spring Apps and Azure Function Apps using open-source technologies such as Java, Nodejs, PHP and Python.</li>
-                <li>Assisted customers in enhancing web applications’ performance, security, and availability.</li>
-                <li>Performance optimization of Java,Nodejs,Python,PHP web apps using JFR,V8 Profiler,CProfile,Xdebug respectively.</li>
-                <li>Helped customers create custom docker containers for cloud based on Alpine and Debian base images.</li>
-                <li>Assisted customers to create CI/CD pipeline with Azure DevOps and GitHub Actions. IaC implementation with ARM, Bicep and terraform.</li>
-                <li>Helped customers create, manage, and interact with Azure resources using Azure SDK for Python. Used Azure Identity library for token-based authentication with Azure AD (Entra ID).</li>
-            </ul>
-            <h3>Technical Advisor. From: Sep-2021 To: Present.</h3>
-            <ul>
-                <li>Lead team of Cloud Support Engineers. Curated Technical development plan for Support Engineers.</li>
-                <li>Created and improved troubleshooting workflows, readiness content, collaboration for cross product technical issues.</li>
-                <li>Worked on creating self-help tools for customers and diagnostic tools for support Engineers using Azure Data Explorer and Python Flask.</li>
-                <li>Created internal web applications/tools:
-                    <ul>
-                        <li>Manage and review long running support incidents</li>
-                        <li>Find recently filed product issues by respective support teams</li>
-                        <li>Vacation tracker tool to manage staffing and pro-active vacation planning</li>
-                        <li>Automated case backlog reporting</li>
-                        <li>Customer support experience analyser</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>Aged case review tool</h3>
-                    <p>Description: Tool helps in keeping track of aged support cases.</p>
-                    <p>Technologies: Python Flask, Azure App Service, Azure Functions, Azure Data Explorer</p>
-                    <p>Link: <a href="https://github.com/username/repository">https://github.com/username/repository</a></p>
-                </li>
-                <!-- Add more projects as needed -->
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Contact</h2>
-            <p>Email: abhilashkonnur1@gmail.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/abhilash-konnur-1b484b123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">linkedin.com/in/Abhilash</a></p>
-        </div>
+        <h1 class="text-center">Abhilash Konnur</h1>
+        <img src="path_to_your_photo.jpg" class="img-fluid rounded-circle mx-auto d-block" alt="Your photo">
+        <p class="text-justify">Passionate developer with a strong desire to work with cutting-edge technologies...</p>
+        <img src="path_to_logo.jpg" class="img-fluid mx-auto d-block" alt="Azure or Microsoft logo">
+        <h2 class="text-center">Skills</h2>
+        <ul class="list-group">
+            <li>Languages: Java, Python</li>
+            <li>Web Servers: Apache, Tomcat, Nginx</li>
+            <li>Networking: TCP/IP, HTTP/S</li>
+            <li>Platform: Linux, Docker, Kubernetes</li>
+        </ul>
     </div>
 </body>
 </html>
