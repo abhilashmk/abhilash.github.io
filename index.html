@@ -3,11 +3,32 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>About Me and Skills</title>
+    <style>
+        body {
+            background-color: #f0f2f5;
+        }
+        .navbar {
+            background-color: #3b5998;
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+        }
+        .container {
+            background-color: #ffffff;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .contact-info div {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Abhilash Konnur</a>
         <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">About Me</a>
                 </li>
@@ -23,19 +44,19 @@
     <div class="container">
         <h1 class="text-center">Abhilash Konnur</h1>
         <div class="contact-info">
-        <div class="email">Email: abhilashkonnur1@gmail.com</div>
-        <div class="linkedin">LinkedIn: <a href="https://www.linkedin.com/in/abhilash-konnur-1b484b123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">linkedin.com/in/Abhilash</a></div>
-        <div class="mobile">Mobile: +1-234-567-8901</div>
+            <div class="email">Email: abhilashkonnur1@gmail.com</div>
+            <div class="linkedin">LinkedIn: <a href="https://www.linkedin.com/in/abhilash-konnur-1b484b123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">linkedin.com/in/Abhilash</a></div>
+            <div class="mobile">Mobile: +1-234-567-8901</div>
         </div>
         <img src="path_to_your_photo.jpg" class="img-fluid rounded-circle mx-auto d-block" alt="Your photo">
         <p class="text-justify">Passionate developer with a strong desire to work with cutting-edge technologies...</p>
         <img src="path_to_logo.jpg" class="img-fluid mx-auto d-block" alt="Azure or Microsoft logo">
         <h2 class="text-center">Skills</h2>
         <ul class="list-group">
-            <li>Languages: Java, Python</li>
-            <li>Web Servers: Apache, Tomcat, Nginx</li>
-            <li>Networking: TCP/IP, HTTP/S</li>
-            <li>Platform: Linux, Docker, Kubernetes</li>
+            <li class="list-group-item">Languages: Java, Python</li>
+            <li class="list-group-item">Web Servers: Apache, Tomcat, Nginx</li>
+            <li class="list-group-item">Networking: TCP/IP, HTTP/S</li>
+            <li class="list-group-item">Platform: Linux, Docker, Kubernetes</li>
         </ul>
     </div>
 </body>
