@@ -32,15 +32,15 @@
             justify-content: space-around;
             background-color: #f0f2f5;
             padding: 20px;
-            border-radius: 0 8px 8px 0;
+            border-radius: 8px; 
             margin: 20px;
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
-            width: calc(100% - 40px); 
+            width: calc(100% - 40px); /* Adjust margin value */
             max-width: calc(100% - 40px); 
-            overflow-x: auto; 
+            overflow-x: hidden; /* Prevent overflowing content */
         }
         .icon-container {
             display: flex;
@@ -83,7 +83,7 @@
         <!-- Add the rest of your content here -->
     </div class="about-me">
     <div class="icon-container">
-    <img src="azure.png" alt="Java Icon" width="96" height="96">
+    <img src="java.png" alt="Java Icon" width="96" height="96">
     <img src="python.png" alt="Python Icon" width="96" height="96">
     <img src="linux.png" alt="Linux Icon" width="96" height="96">
     <img src="docker.png" alt="Docker Icon" width="96" height="96">
