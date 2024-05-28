@@ -1,108 +1,243 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <title>About Me and Skills</title>
-    <style>
-        body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        }
-        .about-me, .skills {
-            text-align: left;
-            margin-top : 3%;
-            margin-left: 3%;
-            margin-right: auto;
-            width: auto;
-        }
-        .navbar {
-            background-color: #3b5998;
-        }
-        .navbar-brand, .nav-link {
-            color: #ffffff !important;
-        }
-        .container {
-            background-color: #ffffff;
-            margin-top: 20px;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        .contact-info {
-            display: flex;
-            justify-content: space-around;
-            background-color: #f0f2f5;
-            padding: 20px;
-            border-radius: 8px; 
-            margin: 20px;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            width: calc(100% - 40px); /* Adjust margin value */
-            max-width: calc(100% - 40px); 
-            overflow-x: hidden; /* Prevent overflowing content */
-        }
-        .icon-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px; /* Adjust this value to increase or decrease the spacing between icons */
-            margin-bottom: 15px;
-            margin-top: 15px;
-        }
-    </style>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">Abhilash Konnur</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="education_experience.html">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="about-me">
-        <h2>About Me</h2>
-        <p>Passionate developer with a strong desire to work with cutting-edge technologies and contribute to innovative projects that push the boundaries of technology.</p>
-        <h2>Skills</h2>
-        <ul class="list-group">
-            <li class="list-group-item"><b>Languages:</b> Java, Python</li>
-            <li class="list-group-item"><b>Web Servers:</b> Apache, Tomcat, Nginx</li>
-            <li class="list-group-item"><b>Platform:</b> Linux, Docker, Kubernetes</li>
-            <li class="list-group-item"><b>DevOps/IaC:</b> Azure DevOps, GitHub Actions, Terraform, ARM, BICEP, Azure Management Python SDK</li>
-            <li class="list-group-item"><b>Database:</b> SQL, MongoDB, Azure Data Explorer</li>
-            <li class="list-group-item"><b>Cloud:</b> Azure App Service, Azure Container App, Azure Function App, Azure Spring App, Azure Entra ID</li>
-        </ul>
-        <!-- Add the rest of your content here -->
-    </div class="about-me">
-    <div class="icon-container">
-    <img src="java.png" alt="Java Icon" width="96" height="96">
-    <img src="python.png" alt="Python Icon" width="96" height="96">
-    <img src="linux.png" alt="Linux Icon" width="96" height="96">
-    <img src="docker.png" alt="Docker Icon" width="96" height="96">
-    <img src="kubernetes.png" alt="Kubernetes Icon" width="96" height="96">
-    </div>
-
-    <div class="icon-container">
-        <img src="azure.png" alt="Azure Icon" width="96" height="96">
-        <img src="spring-boot.png" alt="Spring Icon" width="96" height="96">
-        <img src="App-Services.svg" alt="App Service Icon" width="96" height="96">
-        <img src="Function-Apps.svg" alt="Function App Icon" width="96" height="96">
-    </div>
-    
-    <div class="contact-info">
-        <p>Email: abhilashkonnur1@gmail.com</p>
-        <p><a href="https://www.linkedin.com/in/abhilash-konnur-1b484b123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a></p>
-        <p><a href="https://github.com/abhilashmk">GitHub</a></p>
-        <p>Mobile: +91-9164824591</p></div>
-    </div>
-</body>
-</html>
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">  
+    <title>About Me and Skills</title>  
+    <style>  
+        body {  
+            display: flex;  
+            flex-direction: column;  
+            min-height: 100vh;  
+            background-color: #ffffff;  
+        }  
+        .about-me, .skills, .contact-info {  
+            text-align: left;  
+            margin: 1%;  
+            width: auto;  
+            background-color: #ffffff;  
+            border-radius: 8px;  
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+        }  
+        .navbar {  
+            background-color: #3b5998;  
+        }  
+        .navbar-brand, .nav-link {  
+            color: #ffffff !important;  
+        }  
+        .about-me {  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            flex-direction: column;  
+            margin-top: 20px;  
+        }  
+        .container {  
+            background-color: #ffffff;  
+            margin-top: 10px;  
+            padding: 10px;  
+            border-radius: 8px;  
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+        }  
+        .contact-info {  
+            display: flex;  
+            justify-content: space-around;  
+            margin: 20px auto;  
+            width: 72%;  
+            max-width: 1200px;  
+        }  
+        .icon-container {  
+            display: flex;  
+            justify-content: center;  
+            gap: 20px;  
+            margin-bottom: 15px;  
+            margin-top: 15px;  
+            flex-wrap: wrap;  
+        }  
+        .skills {  
+            display: grid;  
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
+            gap: 10px;  
+            margin-top: 5px;  
+        }  
+        .card-container {  
+            perspective: 1000px;  
+        }  
+        .card {  
+            width: 100%;  
+            height: 250px;  
+            position: relative;  
+            transform-style: preserve-3d;  
+            transition: transform 0.5s, box-shadow 0.3s;  
+            cursor: pointer;  
+            border-radius: 10px;  
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+            padding: 15px;  
+            display: flex;  
+            flex-direction: column;  
+            align-items: center;  
+            text-align: center;  
+            background-color: #e9f7fe; /* Set a consistent background color */  
+        }  
+        .card:hover {  
+            transform: translateY(-10px);  
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+        }  
+        .card .front,  
+        .card .back {  
+            position: absolute;  
+            width: 100%;  
+            height: 100%;  
+            backface-visibility: hidden;  
+            display: flex;  
+            flex-direction: column;  
+            align-items: center;  
+            justify-content: center;  
+            padding: 10px;  
+            border-radius: 10px;  
+            color: #3b5998;  
+        }  
+        .card .front {  
+            background-color: #e9f7fe;  
+        }  
+        .card .back {  
+            background-color: #cfe2f3;  
+            transform: rotateY(180deg);  
+        }  
+        .card.flipped {  
+            transform: rotateY(180deg);  
+        }  
+        .card-icon {  
+            width: 50px;  
+            height: 50px;  
+            margin: 0 10px; /* Ensure icons have space between them */  
+        }  
+        .title {  
+            font-size: 2rem;  
+            color: #3b5998;  
+            margin-bottom: 10px;  
+        }  
+        .card-content {  
+            display: flex;  
+            align-items: center;  
+            justify-content: center;  
+            flex-wrap: wrap;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <nav class="navbar navbar-expand-lg">  
+        <a class="navbar-brand" href="#">Abhilash Konnur</a>  
+        <div class="collapse navbar-collapse">  
+            <ul class="navbar-nav ml-auto">  
+                <li class="nav-item active">  
+                    <a class="nav-link" href="index.html">About Me</a>  
+                </li>  
+                <li class="nav-item">  
+                    <a class="nav-link" href="education_experience.html">Experience</a>  
+                </li>  
+                <li class="nav-item">  
+                    <a class="nav-link" href="projects.html">Projects</a>  
+                </li>  
+            </ul>  
+        </div>  
+    </nav>  
+    <div class="container">  
+        <h2 class="title">About Me</h2>  
+        <p>Passionate developer with a strong desire to work with cutting-edge technologies and contribute to innovative projects that push the boundaries of technology.</p>  
+    </div>  
+    <div class="container">  
+        <h2 class="title">Skills</h2>  
+        <div class="skills">  
+            <div class="card-container">  
+                <div class="card" onclick="this.classList.toggle('flipped');">  
+                    <div class="front">  
+                        <div class="card-content">  
+                            <img src="java.png" alt="Java Icon" class="card-icon">  
+                            <img src="python.png" alt="Python Icon" class="card-icon">  
+                        </div>  
+                        <b>Languages:</b> Java, Python  
+                    </div>  
+                    <div class="back">  
+                        Proficient in object-oriented programming and scripting languages.  
+                    </div>  
+                </div>  
+            </div>  
+            <div class="card-container">  
+                <div class="card" onclick="this.classList.toggle('flipped');">  
+                    <div class="front">  
+                        <div class="card-content">  
+                            <img src="apache.png" alt="Apache Icon" class="card-icon">  
+                            <img src="tomcat.png" alt="Tomcat Icon" class="card-icon">  
+                            <img src="nginx.png" alt="Nginx Icon" class="card-icon">  
+                        </div>  
+                        <b>Web Servers:</b> Apache, Tomcat, Nginx  
+                    </div>  
+                    <div class="back">  
+                        Experience with server setup, configuration, and management.  
+                    </div>  
+                </div>  
+            </div>  
+            <div class="card-container">  
+                <div class="card" onclick="this.classList.toggle('flipped');">  
+                    <div class="front">  
+                        <div class="card-content">  
+                            <img src="linux.png" alt="Linux Icon" class="card-icon">  
+                            <img src="docker.png" alt="Docker Icon" class="card-icon">  
+                            <img src="kubernetes.png" alt="Kubernetes Icon" class="card-icon">  
+                        </div>  
+                        <b>Platform:</b> Linux, Docker, Kubernetes  
+                    </div>  
+                    <div class="back">  
+                        Skilled in containerization and orchestration technologies.  
+                    </div>  
+                </div>  
+            </div>  
+            <div class="card-container">  
+                <div class="card" onclick="this.classList.toggle('flipped');">  
+                    <div class="front">  
+                        <div class="card-content">  
+                            <img src="azure.png" alt="Azure Icon" class="card-icon">  
+                        </div>  
+                        <b>DevOps/IaC:</b> Azure DevOps, GitHub Actions, Terraform, ARM, BICEP, Azure Management Python SDK  
+                    </div>  
+                    <div class="back">  
+                        Proficient in continuous integration/continuous deployment and infrastructure as code.  
+                    </div>  
+                </div>  
+            </div>  
+            <div class="card-container">  
+                <div class="card" onclick="this.classList.toggle('flipped');">  
+                    <div class="front">  
+                        <div class="card-content">  
+                            <img src="database.png" alt="Database Icon" class="card-icon">  
+                        </div>  
+                        <b>Database:</b> SQL, MongoDB, Azure Data Explorer  
+                    </div>  
+                    <div class="back">  
+                        Experienced with relational and NoSQL databases.  
+                    </div>  
+                </div>  
+            </div>  
+            <div class="card-container">  
+                <div class="card" onclick="this.classList.toggle('flipped');">  
+                    <div class="front">  
+                        <div class="card-content">  
+                            <img src="cloud.png" alt="Cloud Icon" class="card-icon">  
+                        </div>  
+                        <b>Cloud:</b> Azure App Service, Azure Container App, Azure Function App, Azure Spring App, Azure Entra ID  
+                    </div>  
+                    <div class="back">  
+                        Knowledgeable in cloud platform services and management.  
+                    </div>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+    <div class="container contact-info">  
+        <p>Email: abhilashkonnur1@gmail.com</p>  
+        <p><a href="https://www.linkedin.com/in/abhilash-konnur-1b484b123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a></p>  
+        <p><a href="https://github.com/abhilashmk">GitHub</a></p>  
+        <p>Mobile: +91-9164824591</p>  
+    </div>  
+</body>  
+</html>  
