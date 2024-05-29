@@ -47,8 +47,7 @@
         }
         .icon-container {
             display: flex;
-            justify-content: center;
-            gap: 250px;
+            justify-content: space-around; /* This makes the gap dynamic */
             margin-bottom: 15px;
             margin-top: 15px;
             flex-wrap: wrap;
@@ -127,14 +126,14 @@
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            background-color: #3b5998;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #ffffff;
+            color: #3b5998;
             font-size: 24px;
             transition: transform 0.3s, width 0.3s, height 0.3s;
             cursor: pointer;
+            border: 2px solid transparent; /* Add a transparent border to maintain size */
         }
         .contact-icon img {
             width: 30px;
@@ -287,11 +286,11 @@
     </div>
     <div class="icon-container">
         <div class="contact-icon" onclick="showContactInfo(this)">
-            <img src="email_icon.png" alt="Email Icon">
+            <img src="email.png" alt="Email Icon">
             <div class="contact-info-content">abhilashkonnur1@gmail.com</div>
         </div>
         <div class="contact-icon" onclick="window.open('https://www.linkedin.com/in/abhilash-konnur-1b484b123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', '_blank')">
-            <img src="linkedin_icon.png" alt="LinkedIn Icon">
+            <img src="linkedin.png" alt="LinkedIn Icon">
             <div class="contact-info-content">LinkedIn</div>
         </div>
         <div class="contact-icon" onclick="window.open('https://github.com/abhilashmk', '_blank')">
@@ -299,7 +298,7 @@
             <div class="contact-info-content">GitHub</div>
         </div>
         <div class="contact-icon" onclick="showContactInfo(this)">
-            <img src="phone_icon.png" alt="Phone Icon">
+            <img src="phone.png" alt="Phone Icon">
             <div class="contact-info-content">+91-9164824591</div>
         </div>
     </div>
