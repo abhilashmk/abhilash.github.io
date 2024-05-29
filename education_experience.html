@@ -87,15 +87,51 @@
             max-height: 50px;
             margin-bottom: 10px;
         }
-        .contact-info {
+        contact-icon {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
             display: flex;
-            justify-content: space-around;
-            background-color: #f0f2f5;
-            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            color: #3b5998;
+            font-size: 24px;
+            transition: transform 0.3s, width 0.3s, height 0.3s;
+            cursor: pointer;
+            border: 2px solid transparent; /* Add a transparent border to maintain size */
+        }
+        .contact-icon img {
+            width: 35px;
+            height: 35px;
+        }
+        .contact-icon:hover {
+            transform: scale(1.2);
+        }
+        .contact-info-content {
+            position: absolute;
+            top: 0;
+            left: 70px;
+            white-space: nowrap;
+            background-color: #ffffff;
+            color: #3b5998;
             border-radius: 8px;
-            margin: 20px 0;
-            bottom: 0;
-            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            opacity: 0;
+            transition: width 0.3s, height 0.3s, opacity 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            font-size: 0.8rem;
+        }
+        .contact-icon.active .contact-info-content {
+            opacity: 1;
+        }
+        .contact-info-content a {
+            color: #3b5998;
+            text-decoration: none;
         }
         .title-wrapper {
             text-align: center;
@@ -186,12 +222,39 @@
         </div>
     </div>
 
-    <div class="contact-info">
-        <p>Email: abhilashkonnur1@gmail.com</p>
-        <p><a href="https://www.linkedin.com/in/abhilash-konnur-1b484b123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a></p>
-        <p><a href="https://github.com/abhilashmk">GitHub</a></p>
-        <p>Mobile: +91-9164824591</p></div>
+    <div class="icon-container">
+        <div class="contact-icon" onclick="showContactInfo(this)">
+            <img src="email.png" alt="Email Icon">
+            <div class="contact-info-content">abhilashkonnur1@gmail.com</div>
+        </div>
+        <div class="contact-icon" onclick="window.open('https://www.linkedin.com/in/abhilash-konnur-1b484b123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', '_blank')">
+            <img src="linkedin.png" alt="LinkedIn Icon">
+            <div class="contact-info-content">LinkedIn</div>
+        </div>
+        <div class="contact-icon" onclick="window.open('https://github.com/abhilashmk', '_blank')">
+            <img src="github.png" alt="GitHub Icon">
+            <div class="contact-info-content">GitHub</div>
+        </div>
+        <div class="contact-icon" onclick="showContactInfo(this)">
+            <img src="phone.png" alt="Phone Icon">
+            <div class="contact-info-content">+91-9164824591</div>
+        </div>
     </div>
+
+    <script>
+        function showContactInfo(element) {
+            // Hide previously shown contact info
+            const activeIcons = document.querySelectorAll('.contact-icon.active');
+            activeIcons.forEach(icon => {
+                if (icon !== element) {
+                    icon.classList.remove('active');
+                }
+            });
+
+            // Show the contact info for the clicked icon
+            element.classList.toggle('active');
+        }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
